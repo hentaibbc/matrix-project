@@ -1,0 +1,30 @@
+{
+    "name": "matrix-platform/webapp",
+    "description": "Basic project template of matrix platform.",
+    "type": "project",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Tatsuya",
+            "email": "c298943@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ckeditor/ckeditor": "4.*",
+        "matrix-platform/backend-adminlte": "dev-master",
+        "matrix-platform/core": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "git rev-parse HEAD > version",
+            "sh vendor/matrix-platform/core/doc/install-core.sh",
+            "sh vendor/matrix-platform/backend-adminlte/doc/install-backend.sh"
+        ],
+        "post-create-project-cmd": [
+            "sh vendor/matrix-platform/core/doc/install-core.sh",
+            "sh vendor/matrix-platform/backend-adminlte/doc/install-backend.sh",
+            "mv config-sample.php config.php"
+        ]
+    }
+}
