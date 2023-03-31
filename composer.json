@@ -2,14 +2,15 @@
     "name": "hentaibbc/matrix-app",
     "description": "Basic project template of matrix platform.",
     "type": "project",
-    "license": "MIT License",
+    "license": "MIT",
     "authors": [
         {
             "name": "Tatsuya",
             "email": "c298943@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
         "ckeditor/ckeditor": "4.*",
         "matrix-platform/backend-adminlte": "dev-master",
