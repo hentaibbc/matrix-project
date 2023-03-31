@@ -10,7 +10,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "ckeditor/ckeditor": "4.*",
         "matrix-platform/backend-adminlte": "dev-master",
